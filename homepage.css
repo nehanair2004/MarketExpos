@@ -34,7 +34,7 @@ header {
 }
 .sidebar{
     width: 200px;
-    height: 50%;
+    height: 100%;
     position: fixed;
     background: bisque;
 }
