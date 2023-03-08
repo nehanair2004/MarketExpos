@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     padding: 1rem;
     background: bisque;
-    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px bisque;
 }
 
 .search-wrapper{
@@ -37,6 +37,7 @@ header {
     height: 100%;
     position: fixed;
     background: bisque;
+    box-shadow: 2px 2px 2px bisque;
 }
 .sidebar-menu li {
     width: 100%;
