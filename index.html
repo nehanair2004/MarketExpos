@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="/asset/logoo.webp" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/87eb476f03.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>main page</title>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer>
+  </script>-->
+
+    <!--<script src="../temp.js" defer></script>-->
+  </head>
+
+  <body class="bg-color">
+    <div class="navbar">
+      <img
+        src="static/images/logowhite.png"
+        class="logo"
+        alt="logoo-removebg-preview"
+      />
+      <!--<img src="/asset/signup.webp" class="background" alt="signup" />-->
+      <ul>
+        <li><a href="#">Stock Screener</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="content">Changing the <br />way you invest.</div>
+    </div>
+
+    <div class="form-box">
+      <h1 id="title">
+        Ready to outperform the Market? <br />Register with Us!
+        <br /><br />Please Enter your Details
+      </h1>
+
+      <form>
+        <div class="input-group">
+          <div class="input-field" id="namefield">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="input-field" id="agefield">
+            <i class="fa-solid fa-calendar"></i>
+            <input type="number" placeholder="Age" />
+          </div>
+          <div class="input-field" id="mobilenofield">
+            <i class="fa-solid fa-mobile"></i>
+            <input type="number" placeholder="Mobile Number" />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email ID" />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <p><a href="#">Lost Password?</a></p>
+        </div>
+        <div class="button-field">
+          <button type="button" id="signupbutton">Sign Up</button>
+          <button type="button" id="loginbutton" class="disable">Login</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      let signupbutton = document.getElementById("signupbutton");
+      let loginbutton = document.getElementById("loginbutton");
+      let namefield = document.getElementById("namefield");
+      let agefield = document.getElementById("agefield");
+      let mobilenofield = document.getElementById("mobilenofield");
+      let title = document.getElementById("title");
+
+      loginbutton.onclick = function () {
+        namefield.style.maxHeight = 0;
+        agefield.style.maxHeight = 0;
+        mobilenofield.style.maxHeight = 0;
+        title.innerHTML = "Login";
+        signupbutton.classList.add("disable");
+        loginbutton.classList.remove("disable");
+      };
+
+      signupbutton.onclick = function () {
+        namefield.style.maxHeight = "45px";
+        agefield.style.maxHeight = "45px";
+        mobilenofield.style.maxHeight = "45px";
+        title.innerHTML = "Sign Up";
+        signupbutton.classList.remove("disable");
+        loginbutton.classList.add("disable");
+      };
+    </script>
+  </body>
+</html>
